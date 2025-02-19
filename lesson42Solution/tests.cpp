@@ -1,7 +1,7 @@
-#include "main.h"
-#include "logic.h"
+#include "tests.h"
 
 void print(string expected, int matrix[N][N]) {
+	
 	string actual = has_zero_elements(matrix);
 
 	string msg = expected == actual ? "PASS (green) " : "FAIL (red)";

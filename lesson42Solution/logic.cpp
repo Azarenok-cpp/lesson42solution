@@ -1,5 +1,6 @@
 #include "logic.h"
 #include "main.h"
+
 string has_zero_elements(int matrix[N][N]) {
 	string result = "";
 
@@ -7,7 +8,8 @@ string has_zero_elements(int matrix[N][N]) {
 	{
 		for (int j = 0; j < N; j++) {
 			if (matrix[i][j] == 0) {
-				result += to_string(matrix[i][j]) + " ";
+				result += to_string(i + 1) + " ";
+				break;
 			}
 		}
 	}
